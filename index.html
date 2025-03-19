@@ -1,13 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <lik rel="stylesheet" href="Style/styles.css"
-    <title>Meu Portfólio</title>
+
+    <!--FONT-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--MAIN CSS-->
+    <link rel="stylesheet" href="Style/styles.css"></link>
+    <title> Meu Portfolio</title>
 </head>
+
 <body>
-    <script></script>
-    
+    <!---HEADER-->
+    <header class="header">
+        <a href ="#" class="logo" id="menu-icon">Portfolio</a>
+
+        <i class="fa-solid fa-bars"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+     <!---HOME SECTION DESIGN-->
+     <section class="home" id="home">
+        <div class="home-content">
+            <h3> Olá</h3>
+            <h1>Tiago Santos</h1>
+            <h3> Desenvolvedor <span>Full Stack</span></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium porro voluptate quos temporibus illo molestiae ratione voluptatibus soluta, blanditiis deserunt dolorem hic nemo reprehenderit rerum fuga, animi assumenda. Dolorem, dignissimos!</p>
+            <div class="social-media">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>                
+            </div>
+            <a href="#" class="btn">Baixar CV</a>
+        </div>
+
+        <div class="home-img">
+            <img src="images/avatar.png" alt="Avatar">
+        </div>
+     </section>
+
+     <!---ABOUT SECTION DESIGN-->
+     <section class="about" id="about">
+        <div class="about-img"></div>
+        <img src="images/avatar2.png" alt="Avatar2">
+
+        <div class="about-content">
+            <h2 class="headlign"> ABOUT <span>Me</span></h2>
+            <h3>Developer</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates, atque? Ab nemo sunt voluptate velit ullam, accusamus quod placeat, aperiam, dolorem minima est obcaecati voluptas beatae magnam aliquid corrupti earum!</p>
+            <a href="#" class="btn">Read more</a>
+        </div>
+     </section>
+
+     <script src="JS/main.js"></script>
 </body>
+
 </html>
