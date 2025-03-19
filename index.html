@@ -10,21 +10,21 @@
 
     <!--MAIN CSS-->
     <link rel="stylesheet" href="Style/styles.css"></link>
-    <title> Meu Portfolio</title>
+    <title>Meu Portfolio</title>
 </head>
 
 <body>
     <!---HEADER-->
     <header class="header">
-        <a href ="#" class="logo" id="menu-icon">Portfolio</a>
+        <a href ="#" class="logo" >Portfolio</a>
 
-        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
 
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
-            <a href="#portfolio">Portfolio</a>
+            <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -55,7 +55,7 @@
         <img src="images/avatar2.png" alt="Avatar2">
 
         <div class="about-content">
-            <h2 class="headlign"> About <span>Me</span></h2>
+            <h2 class="heading"> About <span>Me</span></h2>
             <h3>Desenvolvedor</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates, atque? Ab nemo sunt voluptate velit ullam, accusamus quod placeat, aperiam, dolorem minima est obcaecati voluptas beatae magnam aliquid corrupti earum!</p>
             <a href="#" class="btn">Read more</a>
@@ -92,6 +92,52 @@
 
      </section>
 
+       <!---PROJECTS SECTION DESIGN-->
+       <section class="projects" id="projects">
+        <h2 class="heading"> Latest <span> Projects</span></h2>
+
+        <div class="projects-container">
+            <div class="projects-box">
+                <img src="images/em_breve.png" alt="em_breve">
+                <div class="projects-layer"></div>
+        </div>
+
+       </section>
+
+       <!---CONTACT SECTION DESIGN-->
+       <section class="contact" id="contact">
+            <h2 class="heading">Contato <span>Me</span></h2>
+
+            <form action="#">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email Address">
+                </div>
+
+                <div class="input-box">
+                    <input type="text" placeholder="Mobile Number">
+                    <input type="text" placeholder="Email Subject">
+                </div>
+
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <input type="submit" value="Send Message" class="btn">
+
+            </form>
+        </section>
+
+       <!---FOOTER SECTION DESIGN-->
+
+       <footer class="footer">
+        <div class="footer-text">
+            <p>Copright &copy; 2024 by @tiago | All Rights Reserved.  </p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+       </footer>
+
+        <!---MAIN JS-->
 
      <script src="JS/main.js"></script>
 </body>
