@@ -186,3 +186,15 @@ span {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
 }
+
+.skills h2 {
+    margin-bottom: 5rem;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
