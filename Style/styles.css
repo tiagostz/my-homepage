@@ -196,7 +196,9 @@ span {
 }
 
 .skills h2 {
-    margin-bottom: 5rem;
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-align: center;
 }
 
 .skills-container {
@@ -208,7 +210,7 @@ span {
 }
 
 .skills-container .skills-box {
-    flex: 1 1 30rem;
+    flex: 0 0 30rem;
     background: var(--snd-bg-color);
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
@@ -219,11 +221,11 @@ span {
 
 .skills-container .skills-box:hover {
     border-color: var(--main-color);
-    transform: scale(1.02);
+    transform: scale(1);
 }
 
 .skills-box i {
-    font-size: 7rem;
+    font-size: 3rem;
     color: var(--main-color);
 }
 
@@ -442,7 +444,7 @@ span {
     .navbar a {
         display: block;
         font-size: 2rem;
-        margin: 3rem 0;
+        margin: 3rem;
 
     }
 
