@@ -38,4 +38,22 @@ window.onscroll = () => {
 };
 
 /*========================== scroll reveal ========================*/
+ScrollReveal({ 
+    distance: '80px',
+    duration: 2000,
+    delay: 200,
+});
 
+ScrollReveal().reveal('.home-content, heading', { origin: 'top' });
+ScrollReveal().reveal('.home-img, .skills-container, .projects-box, .contact form', { origin: 'button' });
+ScrollReveal().reveal('.home-contact h1, .about-img', { origin: 'left' });
+ScrollReveal().reveal('..home-contact p, .about-content', { origin: 'right' });
+
+/*========================== typed reveal ========================*/
+const typed = new Typed('.multiple-text', {
+    strings: ['Full Stack'],
+    typeSpeed: 70,
+    backSpeed: 70,
+    backDelay: 1000,
+    loop: true,
+});
