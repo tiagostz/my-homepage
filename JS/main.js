@@ -44,9 +44,9 @@ ScrollReveal({
     delay: 200,
 });
 
-ScrollReveal().reveal('.home-content, heading', { origin: 'top' });
+ScrollReveal().reveal('.home-content', { origin: 'top' });
 ScrollReveal().reveal('.home-img, .skills-container, .projects-box', { origin: 'bottom' });
-ScrollReveal().reveal('.about-img', { origin: 'left' });
+ScrollReveal().reveal('.about, .skills-title, .heading',{ origin: 'left' });
 ScrollReveal().reveal('.about-content', { origin: 'right' });
 
 /*========================== scroll reveal ========================*/
