@@ -50,9 +50,11 @@ ScrollReveal().reveal('.about-img', { origin: 'left' });
 ScrollReveal().reveal('.about-content', { origin: 'right' });
 
 /*========================== scroll reveal ========================*/
-
-document.addEventListener("DOMContentLoaded", function () {
-    const typingElement = document.getElementById('typing-effect');
-    typingElement.style.animationPlayState = 'running';
+const typed = new Typed('.multiple-text', {
+    strings: ['Full Stack'],
+    typeSpeed: 70,
+    backSpeed: 70,
+    backDelay: 1000,
+    loop: true,
 });
 
