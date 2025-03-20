@@ -10,8 +10,8 @@ menuIcon.onclick = () => {
 
 /*========================== scroll section active link ======================*/
 
-let sections = document.querySelector('section');
-let navLinks = document.querySelector('header nav a');
+let sections = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('header nav a');
 
 window.onscroll = () => {
     sections.forEach(sec => {
@@ -45,7 +45,7 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.home-content, heading', { origin: 'top' });
-ScrollReveal().reveal('.home-img, .skills-container, .projects-box', { origin: 'button' });
+ScrollReveal().reveal('.home-img, .skills-container, .projects-box', { origin: 'bottom' });
 ScrollReveal().reveal('.about-img', { origin: 'left' });
 ScrollReveal().reveal('.about-content', { origin: 'right' });
 
@@ -55,3 +55,4 @@ document.addEventListener("DOMContentLoaded", function () {
     const typingElement = document.getElementById('typing-effect');
     typingElement.style.animationPlayState = 'running';
 });
+
