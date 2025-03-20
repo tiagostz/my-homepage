@@ -45,8 +45,13 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.home-content, heading', { origin: 'top' });
-ScrollReveal().reveal('.home-img, .skills-container, .projects-box, .contact form', { origin: 'button' });
-ScrollReveal().reveal('.home-contact h1, .about-img', { origin: 'left' });
-ScrollReveal().reveal('..home-contact p, .about-content', { origin: 'right' });
+ScrollReveal().reveal('.home-img, .skills-container, .projects-box', { origin: 'button' });
+ScrollReveal().reveal('.about-img', { origin: 'left' });
+ScrollReveal().reveal('.about-content', { origin: 'right' });
 
 /*========================== scroll reveal ========================*/
+
+document.addEventListener("DOMContentLoaded", function() {
+    const typingElement = document.getElementById('typing-effect');
+    typingElement.style.animationPlayState = 'running';  
+});

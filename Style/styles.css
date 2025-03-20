@@ -32,9 +32,19 @@ body {
     overflow-x: hidden;
 }
 
+/* section {
+    min-height: 100vh;
+    padding: 5rem 9% 2rem;
+    font-family: 'Nunito', sans-serif;
+} */
+
 section {
     min-height: 100vh;
-    padding: 10rem 9% 2rem;
+    padding: 4rem 3%;  
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
 }
 
 .header{
@@ -106,7 +116,7 @@ span {
 
 .home-img img {
     width: 23vw;
-    border-radius: 50%; /* Define o raio da borda para 50%, tornando-a arredondada */
+    border-radius: 50%; 
     animation: floatImage 4s ease-in-out infinite;
 }
 
@@ -184,6 +194,7 @@ span {
 .about-content h2 {
     text-align: left;
     line-height: 1.2;
+    text-align: center; 
 }
 
 .about-content h3 {
@@ -192,8 +203,11 @@ span {
 }
 
 .about-content p {
-    font-size: 1.6rem;
-    margin: 2rem 0 3rem;
+    font-size: 1.9rem;
+    line-height: 1.8; 
+    font-family: 'Nunito', sans-serif;  
+    text-align: center;  
+    letter-spacing: 0.5px;  
 }
 
 .skills h2 {
@@ -207,7 +221,7 @@ span {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .skills-container .skills-box {
@@ -239,6 +253,18 @@ span {
     margin: 1rem 0 3rem;
 }
 
+.skills-box img[alt="typescript"] {
+    width: 30px; 
+    height: auto; 
+}
+
+.skills-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
 .projects {
     background: var(--snd-bg-color);
 }
@@ -259,19 +285,7 @@ span {
     border-radius: 2rem;
     box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;
-    display: flex;
-}
-
-.projects-box img {
-    width: 30%;
-    transition: .5s ease;
-    opacity: 0.7;
-    display: block;      /* Faz a imagem ser tratada como um bloco */
-    margin: 0 auto;      /* Centraliza a imagem horizontalmente */
-}
-
-.projects-box:hover img {
-    transform: scale(1.1);
+    display:grid;
 }
 
 .projects-box .projects-layer {
@@ -299,6 +313,14 @@ span {
     font-size: 3rem;
 }
 
+.projects-container h3 {
+    font-size: 54px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+    text-align: center; 
+}
+
 .projects-layer p {
     font-size: 1.6rem;
     margin: .3rem 0 1rem;
@@ -314,54 +336,13 @@ span {
     color: var(--snd-bg-color);
 }
 
-.contact h2 {
-    margin-bottom: 3rem;
-}
-
-.contact form {
-    max-width: 70rem;
-    margin: 1rem auto;
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.contact form .input-box {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.contact form .input-box input,
-.contact form textarea{
-    width: 100%;
-    padding: 1.5rem;
-    font-size: 1.6rem;
-    color: var(--text-color);
-    background: var(--snd-bg-color);
-    border-radius: .8rem;
-    margin: .7rem 0;
-}
-
-.contact form .input-box input {
-    width: 49%;
-}
-
-.contact form textarea {
-    resize: none;
-}
-
-.contact form .btn {
-    margin-top: 2rem;
-    cursor: pointer;
-}
-
 .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: var(--snd-bg-color);
+    background: var(--bg-color);
 }
 
 .footer text {
@@ -404,16 +385,14 @@ span {
         padding: 10rem 3%;
     }
 
+
     .skills {
-        padding: 7rem;
+        padding: 8rem;
+        text-align: center;
     }
 
     .projects {
         padding-bottom: 7rem;
-    }
-
-    .contact {
-        min-height: auto;
     }
 
     .footer {
@@ -510,7 +489,26 @@ span {
         font-size: 50%;
     }
 
-    .contact form .input-box input {
-        width: 100%;
+}
+
+#typing-effect {
+    display: inline-block;
+    overflow: hidden;
+    border-right: transparent;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 1s steps(12) 1s forwards, blink 0.75s step-end infinite;
+    vertical-align: bottom; /* Ajuste para alinhar com a base da linha */
+}
+
+@keyframes typing {
+    to {
+        width: 11ch; /* Define a largura final para a quantidade de caracteres */
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
     }
 }
