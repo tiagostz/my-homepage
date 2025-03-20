@@ -270,7 +270,7 @@ span {
 }
 
 .projects h2 {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .projects-container {
@@ -283,7 +283,6 @@ span {
 .projects-container .projects-box {
     position: relative;
     border-radius: 2rem;
-    box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;
     display:grid;
 }
@@ -314,7 +313,7 @@ span {
 }
 
 .projects-container h3 {
-    font-size: 54px;
+    font-size: 34px;
     font-weight: bold;
     text-transform: uppercase;
     font-family: 'Nunito', sans-serif;
