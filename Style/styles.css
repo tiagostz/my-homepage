@@ -188,6 +188,10 @@ span {
 
 .about-img img {
     width: 35vw;
+    display:block;
+    max-width: 500px;
+    height: auto;
+    border-radius: 50%;
 }
 
 .heading {
