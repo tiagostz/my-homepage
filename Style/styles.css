@@ -194,6 +194,18 @@ span {
     border-radius: 50%;
 }
 
+@media (max-width: 768px) {
+    .about-img img {
+        width: 70vw;
+    }
+}
+
+@media (max-width: 617px) {
+    .about-img img {
+        width: 90vw;
+    }
+}
+
 .heading {
     text-align: center;
     font-size: 4.5rem;
@@ -274,7 +286,7 @@ span {
 }
 
 .projects {
-    background: var(--snd-bg-color);
+    background: var(--bg-color);
 }
 
 .projects h2 {
@@ -377,13 +389,108 @@ span {
     color: var(--snd-bg-color);
 }
 
+/* CERTIFICATES SECTION */
+.certificates {
+    background: var(--snd-bg-color);
+}
+
+.certificates h2 {
+    margin-bottom: 4rem;
+}
+
+/* Ajuste para deixar o card mais quadrado */
+.certificates-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .certificates-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .certificates-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.certificate-box {
+    background: var(--bg-color);
+    padding: 1.5rem 1rem 0;
+    border-radius: 1rem;
+    text-align: center;
+    border: .2rem solid var(--bg-color);
+    transition: .5s ease;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 320px;
+    min-height: 320px;
+    max-height: 320px;
+}
+
+.certificate-box:hover {
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+
+.certificate-icon {
+    font-size: 3.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.certificate-box h3 {
+    font-size: 1.7rem;
+    margin-bottom: 0.1rem;
+}
+
+.certificate-institution {
+    font-size: 1.3rem;
+    margin-bottom: 0.05rem;
+}
+
+.certificate-date {
+    font-size: 1.15rem;
+    margin-bottom: 0.1rem;
+}
+
+.certificate-desc {
+    font-size: 1.1rem;
+    color: #b0b8c1;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.certificate-badge {
+    padding: 0.3rem;
+    font-size: 1.15rem;
+}
+
+.certificate-badge i {
+    font-size: 1.4rem;
+}
+
+.certificate-box .btn {
+    margin-top: 0;
+    font-size: 1.25rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 2rem;
+}
+
 .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: var(--bg-color);
+    background: var(--snd-bg-color);
 }
 
 .footer text {
