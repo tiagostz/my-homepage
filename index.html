@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!---SCROLL REVEAL JS-->
+     <script src="https://unpkg.com/scrollreveal"></script>
+
+         <!--MAIN CSS-->
+    <link rel="stylesheet" href="Style/styles.css">
+    <title>Meu Portfolio</title>
+    <link rel="icon" type="image/png" href="images/avatar.png">
+
+    <!---MAIN JS-->
+    <script src="JS/main.js" type="module" defer></script>
+</head>
+
+<body>
+    <!---HEADER-->
+    <header class="header">
+        <a href="#" class="logo">Portfólio <i class="fa-solid fa-mug-hot"></i></a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Início</a>
+            <a href="#about">Sobre mim</a>
+            <a href="#skills">Minhas Habilidades</a>
+            <a href="#certificates">Certificados</a>
+            <a href="#projects">Projetos</a>
+        </nav>
+
+        <div class="header-right">
+            <i class="fa-solid fa-moon" id="theme-toggle"></i>
+            <i class="fa-solid fa-bars" id="menu-icon"></i>
+        </div>
+    </header>
+
+    <!---HOME SECTION DESIGN-->
+    <section class="home" id="home">
+        <div class="home-img">
+            <img src="images/avatar.png" alt="Avatar">
+        </div>
+
+        <div class="home-content">
+            <div class="dev-tag">System.out.println("Hello World");</div>
+            <h1><span>&lt;/</span><span>Tiago</span> dos Santos<span>&gt;</span></h1>
+            <h3> Desenvolvedor <span class="multiple-text">Junior</span></h3>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/tiagosantos016/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/tiagostz" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://wa.me/5519998059027" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="mailto:tiagosantos.01016@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <a href="images/pdfs/CV_Tiago Santos_Desenvolvedor.pdf" class="btn" target="_blank">Visualizar CV</a>
+        </div>
+    </section>
+
+    <!---ABOUT SECTION DESIGN-->
+    <section class="about" id="about">
+        <div class="about-img">
+            <i class="fa-solid fa-mug-hot"></i>
+        </div>
+        <div class="about-content">
+            <h2 class="heading"><span>&lt;/</span><span>Sobre</span> Mim<span>&gt;</span></h2>
+            <p>Sou um profissional da área de Tecnologia formado em <strong>Análise e Desenvolvimento de Sistemas</strong>, com quase <strong>5 anos de experiência</strong> na área tecnológica.<br><br>
+                Ao longo da minha jornada profissional, adquiri experiência em tecnologias de <strong>front-end</strong> e <strong>back-end</strong>, trabalhando com <strong>HTML, CSS, JavaScript, TypeScript</strong> e <strong>AngularJS</strong> no desenvolvimento de interfaces web. No back-end, também utilizei <strong>Node.js</strong> como ambiente de execução para aplicações JavaScript.<br><br>
+                Possuo conhecimento na criação e gerenciamento de <strong>bancos de dados</strong> utilizando <strong>SQL</strong> e <strong>PostgreSQL</strong>, além de realizar testes e validações de APIs utilizando o <strong>Postman</strong>.<br><br>
+                Participei do desenvolvimento de <strong>sistemas internos</strong> para diferentes áreas, como <strong>Jurídico</strong> e <strong>Produtos</strong>, integrando funcionalidades de front-end e back-end para entregar soluções eficientes e uma experiência fluida para os usuários.</p>
+        </div>
+    </section>
+
+    <!---SKILLS SECTION DESIGN-->
+    <section class="skills" id="skills">
+        <h2 class="heading"><span>&lt;/</span><span>Minhas</span> Habilidades<span>&gt;</span></h2>
+
+        <div class="skills-container">
+            <div class="skills-box">
+                <i class="fa-brands fa-js"></i>
+                <h3>JavaScript</h3>
+            </div>
+
+            <div class="skills-box">
+                <img src="images/typescript.png" alt="typescript">
+                <h3>TypeScript</h3>
+            </div>
+
+            <div class="skills-box">
+                <i class="fa-brands fa-angular"></i>
+                <h3>Angular</h3>
+            </div>
+
+            <div class="skills-box">
+                <i class="fa-brands fa-node-js"></i>
+                <h3>Node.js</h3>
+            </div>
+
+            <div class="skills-box">
+                <i class="fa-brands fa-html5"></i>
+                <h3>HTML5</h3>
+            </div>
+
+            <div class="skills-box">
+                <i class="fa-brands fa-css3-alt"></i>
+                <h3>CSS3</h3>
+            </div>
+
+            <div class="skills-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Front-end</h3>
+            </div>
+
+            <div class="skills-box">
+                <i class="fa-solid fa-file-code"></i>
+                <h3>Back-end</h3>
+            </div>
+
+            <div class="skills-box">
+                <i class="fa-solid fa-database"></i>
+                <h3>SQL</h3>
+            </div>
+
+            <div class="skills-box">
+                <i class="fa-solid fa-database"></i>
+                <h3>PostgreSQL</h3>
+            </div>
+
+            <div class="skills-box">
+                <i class="fa-solid fa-plug"></i>
+                <h3>APIRest</h3>
+            </div>
+
+            <div class="skills-box">
+                <i class="fa-solid fa-paper-plane"></i>
+                <h3>Postman</h3>
+            </div>
+        </div>
+    </section>
+
+    <!---CERTIFICATES SECTION DESIGN-->
+    <section class="certificates" id="certificates">
+        <h2 class="heading"><span>&lt;/</span><span>Meus</span> Certificados<span>&gt;</span></h2>
+
+        <div class="certificates-container">
+            <div class="certificate-box">
+                <div class="certificate-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <h3>Análise e Desenvolvimento de Sistemas</h3>
+                <p class="certificate-institution">Faculdade Uniamérica Descomplica</p>
+                <p class="certificate-date">2022 a 2024</p>
+                <div class="certificate-badge">
+                    <i class="fa-solid fa-certificate"></i>
+                    <span>Diploma</span>
+                </div>
+                <a href="https://drive.google.com/file/d/1f9stGVTIPe2h_BSecJKQXdnTLtVPQli6/view?usp=sharing" class="btn" target="_blank"><i class="fa-solid fa-eye"></i> Visualizar Diploma</a>
+            </div>
+
+            <div class="certificate-box">
+                <div class="certificate-icon">
+                    <i class="fa-solid fa-tools"></i>
+                </div>
+                <h3>Curso Técnico em Informática</h3>
+                <p class="certificate-institution">SENAI</p>
+                <p class="certificate-date">2018 a 2019</p>
+                <div class="certificate-badge">
+                    <i class="fa-solid fa-certificate"></i>
+                    <span>Diploma</span>
+                </div>
+                <a href="https://drive.google.com/file/d/1TibUVFa28jTCQeDS5mMx_9CPUrB8ErA8/view?usp=sharing" class="btn" target="_blank"><i class="fa-solid fa-eye"></i> Visualizar Diploma</a>
+            </div>
+
+            <div class="certificate-box">
+                <div class="certificate-icon">
+                    <i class="fa-solid fa-database"></i>
+                </div>
+                <h3>O curso completo de banco de dados SQL, sem mistérios!</h3>
+                <p class="certificate-institution">Udemy</p>
+                <p class="certificate-date">2021</p>
+                <div class="certificate-badge">
+                    <i class="fa-solid fa-certificate"></i>
+                    <span>Certificado</span>
+                </div>
+                <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-c0961f73-64a3-4bdb-963c-5979fc56f9b3.pdf" class="btn" target="_blank"><i class="fa-solid fa-eye"></i> Visualizar Certificado</a>
+            </div>
+
+            <div class="certificate-box">
+                <div class="certificate-icon">
+                    <i class="fa-solid fa-rocket"></i>
+                </div>
+                <h3>Curso Conectar</h3>
+                <p class="certificate-institution">Rocketseat</p>
+                <p class="certificate-date">2022</p>
+                <div class="certificate-badge">
+                    <i class="fa-solid fa-certificate"></i>
+                    <span>Certificado</span>
+                </div>
+                <a href="https://drive.google.com/file/d/1-EnHIX0OjtoZsuM519u6Cq2_5znfL0PI/view" class="btn" target="_blank"><i class="fa-solid fa-eye"></i> Visualizar Certificado</a>
+            </div>
+
+            <div class="certificate-box">
+                <div class="certificate-icon">
+                    <i class="fa-brands fa-angular"></i>
+                </div>
+                <h3>Angular 9 - Essencial</h3>
+                <p class="certificate-institution">Cod3r</p>
+                <p class="certificate-date">2023</p>
+                <div class="certificate-badge">
+                    <i class="fa-solid fa-certificate"></i>
+                    <span>Certificado</span>
+                </div>
+                <a href="https://www.cod3r.com.br/certificates/utt7gfftkw" class="btn" target="_blank"><i class="fa-solid fa-eye"></i> Visualizar Certificado</a>
+            </div>
+
+            <div class="certificate-box">
+                <div class="certificate-icon">
+                    <i class="fa-brands fa-python"></i>
+                </div>
+                <h3>Jornada Python</h3>
+                <p class="certificate-institution">Hashtag Treinamentos</p>
+                <p class="certificate-date">2023</p>
+                <div class="certificate-badge">
+                    <i class="fa-solid fa-certificate"></i>
+                    <span>Certificado</span>
+                </div>
+                <a href="https://drive.google.com/file/d/1-L5eta0lkLBCpIUFBcUbRlT9JcsfWCAH/view" class="btn" target="_blank"><i class="fa-solid fa-eye"></i> Visualizar Certificado</a>
+            </div>
+        </div>
+    </section>
+
+    <!---PROJECTS SECTION DESIGN-->
+    <section class="projects" id="projects">
+        <h2 class="heading"><span>&lt;/</span><span>Meus</span> Projetos<span>&gt;</span></h2>
+
+        <div class="projects-container">
+            <div class="projects-box">
+                <div class="project-icon-wrapper">
+                    <i class="fa-solid fa-dumbbell"></i>
+                </div>
+                <h3>Whey AtlaMax</h3>
+                <div class="project-techs">
+                    <i class="fa-brands fa-html5" title="HTML5" style="color:#e44d26;"></i>
+                    <i class="fa-brands fa-css3-alt" title="CSS3" style="color:#1572b6;"></i>
+                    <i class="fa-brands fa-js" title="JavaScript" style="color:#f7df1e;"></i>
+                </div>
+                <p class="project-desc">Portfólio de bebida proteica desenvolvido para divulgação e vendas.</p>
+                <a href="https://tiagostz.github.io/wheyatlamax/" target="_blank" class="btn"><i class="fa-solid fa-link"></i> Ver Projeto</a>
+            </div>
+            <!-- Novo projeto: Landing Page -->
+            <div class="projects-box">
+                <div class="project-icon-wrapper">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <h3>Landing Page</h3>
+                <div class="project-techs">
+                    <i class="fa-brands fa-html5" title="HTML5" style="color:#e44d26;"></i>
+                    <i class="fa-brands fa-css3-alt" title="CSS3" style="color:#1572b6;"></i>
+                    <i class="fa-brands fa-js" title="JavaScript" style="color:#f7df1e;"></i>
+                    <i class="fa-brands fa-angular" title="Angular" style="color:#dd0031;"></i>
+                </div>
+                <p class="project-desc">Landing page para apresentação de produto/serviço.</p>
+                <a href="https://tiagostz.github.io/landing-page/" target="_blank" class="btn"><i class="fa-solid fa-link"></i> Ver Projeto</a>
+            </div>
+            <!-- Novo projeto: Pac-Man Game -->
+            <div class="projects-box">
+                <div class="project-icon-wrapper">
+                    <i class="fa-solid fa-gamepad"></i>
+                </div>
+                <h3>Pac-Man Game</h3>
+                <div class="project-techs">
+                    <i class="fa-brands fa-html5" title="HTML5" style="color:#e44d26;"></i>
+                    <i class="fa-brands fa-css3-alt" title="CSS3" style="color:#1572b6;"></i>
+                    <i class="fa-brands fa-js" title="JavaScript" style="color:#f7df1e;"></i>
+                </div>
+                <p class="project-desc">Jogo clássico do Pac-Man desenvolvido com lógica pura.</p>
+                <a href="https://tiagostz.github.io/jogo-packman/" target="_blank" class="btn"><i class="fa-solid fa-link"></i> Ver Projeto</a>
+            </div>
+        </div>
+    </section>
+
+    <!---FOOTER SECTION DESIGN-->
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-text">
+                <p>Copyright &copy; 2025 by Tiago dos Santos | Todos os direitos reservados.</p>
+            </div>
+            <div class="footer-contact">
+                <a href="mailto:tiagosantos.01016@gmail.com"><i class="fa-solid fa-envelope"></i> tiagosantos.01016@gmail.com</a>
+                <a href="https://wa.me/5519998059027" target="_blank"><i class="fa-brands fa-whatsapp"></i> (19) 99805-9027</a>
+            </div>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+    </footer>
+
+    <!--TYPED JS-->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+</body>
+
+</html>
