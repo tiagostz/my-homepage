@@ -78,12 +78,12 @@ const sr = ScrollReveal({
     viewFactor: isMobile ? 0.05 : 0.15
 });
 
-sr.reveal('.home-img', { origin: 'left' });
-sr.reveal('.home-content', { origin: 'right' });
+sr.reveal('.home-img', { origin: isMobile ? 'bottom' : 'left' });
+sr.reveal('.home-content', { origin: isMobile ? 'bottom' : 'right' });
 sr.reveal('.skills-title, .heading', { origin: 'top' });
 sr.reveal('.skills-box', { origin: 'bottom', interval: 100 });
-sr.reveal('.about-img', { origin: 'left' });
-sr.reveal('.about-content', { origin: 'right' });
+sr.reveal('.about-img', { origin: isMobile ? 'bottom' : 'left' });
+sr.reveal('.about-content', { origin: isMobile ? 'bottom' : 'right' });
 sr.reveal('.certificate-box', { origin: 'bottom', interval: 100 });
 sr.reveal('.projects-box', { origin: 'bottom', interval: 100 });
 

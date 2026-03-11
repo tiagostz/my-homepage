@@ -57,6 +57,7 @@
 
 html {
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 body {
@@ -221,6 +222,7 @@ section > * {
     line-height: 1;
     margin-bottom: 1.5rem;
     font-family: var(--f-mono);
+    white-space: nowrap;
 }
 
 .home-content h1 span {
@@ -714,7 +716,8 @@ section > * {
         gap: 8rem;
     }
     .home-content h1 {
-        font-size: 6rem;
+        font-size: 5.8rem;
+        white-space: nowrap;
     }
 }
 
@@ -725,7 +728,7 @@ section > * {
     section {
         padding: 8rem 5% 6rem;
         min-height: auto;
-        overflow: visible;
+        overflow: hidden;
         width: 100%;
     }
     .heading {
@@ -755,8 +758,8 @@ section > * {
         margin-bottom: 2rem;
     }
     .home-content h1 {
-        font-size: 4rem;
-        word-wrap: break-word;
+        font-size: 3.8rem;
+        white-space: nowrap;
         line-height: 1.2;
     }
     .home-img img {
@@ -863,7 +866,8 @@ section > * {
     }
 
     .home-content h1 {
-        font-size: 4rem;
+        font-size: 3.5rem;
+        white-space: nowrap;
     }
 
     .home-content h3 {
@@ -966,7 +970,8 @@ section > * {
         font-size: 50%;
     }
     .home-content h1 {
-        font-size: 3.5rem;
+        font-size: 2.8rem;
+        white-space: nowrap;
     }
     .heading {
         font-size: 3rem;
