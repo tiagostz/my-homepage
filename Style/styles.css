@@ -288,10 +288,9 @@ section > * {
 
 .about {
     background: var(--snd-bg-color);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    flex-direction: row;
     align-items: center;
-    gap: 6rem;
+    gap: 12rem;
     padding-left: 12%;
     padding-right: 12%;
     border-top: 1px solid var(--border-color);
@@ -305,8 +304,7 @@ section > * {
     background: var(--bg-color);
     border-radius: 2rem;
     aspect-ratio: 1/1;
-    width: 280px;
-    margin-left: auto;
+    width: 320px;
     border: 1px solid var(--border-color);
     position: relative;
     overflow: hidden;
@@ -607,6 +605,90 @@ section > * {
     -webkit-text-fill-color: transparent;
 }
 
+.project-img-wrapper {
+    width: 100%;
+    height: 180px;
+    border-radius: 1.2rem;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: .3s;
+}
+
+.project-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s ease;
+}
+
+.projects-box:hover .project-img-wrapper {
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+
+.projects-box:hover .project-img-wrapper img {
+    transform: scale(1.1);
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(5px);
+    padding-top: 60px;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 900px;
+    animation: zoom 0.3s;
+}
+
+.modal-content img {
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+}
+
+@keyframes zoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+    color: var(--main-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
 .project-techs {
     display: flex;
     gap: 0.8rem;
@@ -767,7 +849,7 @@ section > * {
         height: 220px;
     }
     .about {
-        grid-template-columns: 1fr;
+        flex-direction: column;
         text-align: center;
         gap: 4rem;
         padding-left: 5%;

@@ -96,3 +96,46 @@ const typed = new Typed('.multiple-text', {
     loop: true,
 });
 
+/*========================== project modal (image/video) ========================*/
+const modal = document.getElementById("projectModal");
+const modalImg = document.getElementById("modalImg");
+const modalVideo = document.getElementById("modalVideo");
+const closeBtn = document.getElementsByClassName("close-modal")[0];
+const viewBtns = document.querySelectorAll(".view-project");
+
+viewBtns.forEach(btn => {
+    btn.onclick = function() {
+        const imgPath = this.getAttribute("data-img");
+        const videoPath = this.getAttribute("data-video");
+
+        modal.style.display = "block";
+        document.body.style.overflow = "hidden";
+
+        if (videoPath) {
+            modalImg.style.display = "none";
+            modalVideo.style.display = "block";
+            modalVideo.src = videoPath;
+            modalVideo.play();
+        } else if (imgPath) {
+            modalVideo.style.display = "none";
+            modalImg.style.display = "block";
+            modalImg.src = imgPath;
+        }
+    }
+});
+
+function closeModal() {
+    modal.style.display = "none";
+    document.body.style.overflow = "auto";
+    modalVideo.pause();
+    modalVideo.src = ""; // Limpa o src para parar o carregamento
+}
+
+closeBtn.onclick = closeModal;
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        closeModal();
+    }
+}
+
