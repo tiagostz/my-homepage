@@ -89,7 +89,7 @@ sr.reveal('.projects-box', { origin: 'bottom', interval: 100 });
 
 /*========================== typed js ========================*/
 const typed = new Typed('.multiple-text', {
-    strings: ['Junior'],
+    strings: ['Full Stack'],
     typeSpeed: 70,
     backSpeed: 130,
     backDelay: 1000,
